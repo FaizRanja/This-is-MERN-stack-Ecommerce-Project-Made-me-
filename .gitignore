@@ -1,0 +1,24 @@
+
+# dependencies
+/node_modules
+/Fornant/node_modules
+/Fornant/.pnp
+/Fornant/.pnp.js
+
+# testing
+/Fornant/coverage
+
+# production
+/Fornant/build
+
+# misc
+/backend/config/config.env
+/Fornant/.DS_Store
+/Fornant/.env.local
+/Fornant/.env.development.local
+/Fornant/.env.test.local
+/Fornant/.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

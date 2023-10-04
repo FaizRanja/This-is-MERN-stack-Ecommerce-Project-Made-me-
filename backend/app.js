@@ -38,11 +38,9 @@ app.use("/api/v1",user)
 app.use("/api/v1",payment)
 
 // Creating Fornat 
-app.use(express.static(path.join(__dirname, "../Fornant/build")))
+app.use(express.static(path.resolve(__dirname, "/backend/build")))
 
-app.get("*" , (req,res)=>{
-    res.sendFile(path.resolve(__dirname,"../Fornant/build/index.html"))
-})
+
 
 
 // Middle ware

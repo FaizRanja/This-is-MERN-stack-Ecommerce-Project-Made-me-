@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1eb2044e.css",
+    "main.js": "/static/js/main.2cb07b9b.js",
+    "static/media/cover.jfif": "/static/media/cover.e2edeab17643ab2951c0.jfif",
+    "static/media/Profile.png": "/static/media/Profile.697fdcd21f6d157b9073.png",
+    "static/media/playstore.png": "/static/media/playstore.82b4831979e0ce7c733e.png",
+    "static/media/fazi.png": "/static/media/fazi.d0c5839937e3c36285f6.png",
+    "index.html": "/index.html",
+    "main.1eb2044e.css.map": "/static/css/main.1eb2044e.css.map",
+    "main.2cb07b9b.js.map": "/static/js/main.2cb07b9b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1eb2044e.css",
+    "static/js/main.2cb07b9b.js"
+  ]
+}

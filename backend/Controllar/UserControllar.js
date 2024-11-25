@@ -14,9 +14,8 @@ exports.registerUser = CathasyncError(async (req, res, next) => {
   const myCloud=await cloudinary.v2.uploader .upload(req.body.avatar,{
     folder:"avatars",
     width:"150",
-    crop:"scale"
+    crop:"scale" 
   })
-
     const { name, email, password } = req.body;
     const user = await User.create({
       name,
@@ -56,6 +55,7 @@ exports.Logout=CathasyncError(async(req,res,next)=>{
     httpOnly:true,
   })
   res.status(200).json({
+    
     success:true,
     message:"Logged Out",
   })

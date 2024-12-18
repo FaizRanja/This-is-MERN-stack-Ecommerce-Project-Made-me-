@@ -1,7 +1,6 @@
 const app =require('./app');
 const connectdatabase =require("./config/database")
 const  cloudinary=require ('cloudinary')  
-
 const dotenv=require('dotenv')
 // Handle Uncaught Exception
 
@@ -22,9 +21,6 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 // connect to database
 
 connectdatabase()
-
-
-
 
 cloudinary.config({
     cloud_name:process.env.CLOUDINARY_NAME,

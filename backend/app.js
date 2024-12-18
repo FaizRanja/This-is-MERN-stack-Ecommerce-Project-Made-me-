@@ -41,9 +41,6 @@ app.use("/api/v1",payment)
 // Creating Fornat 
 app.use(express.static(path.resolve(__dirname, "/backend/build")))
 
-
-
-
 // Middle ware
 app.use(ErrorHandler)
 

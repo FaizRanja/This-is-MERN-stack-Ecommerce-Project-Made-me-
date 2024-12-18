@@ -78,20 +78,7 @@ const LoginRegister = () => {
     }
   };
 const redirect =location.search ? location.search.split("=")[1] :"/account"
-  useEffect(() => {
-    if (error) {
-      alert.error(error);
-      dispatch(ClearError());
-    }
-    if(message){
-      alert.message("Please Login to access this resource")
-      navigator("/login");
-    }
-
-    if(isAuthenticated){
-      navigator(redirect)
-    }
-  }, [dispatch, error, alert,navigator,isAuthenticated,redirect,location,message ]);
+ 
 
   // Switchtools for moving login and register
   const switchTabs = (e, tab) => {

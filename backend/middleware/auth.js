@@ -15,7 +15,7 @@ exports.isAuthenticated = CathasyncError(async (req, res, next) => {
 });
 
 // Handling user roles
-exports.authorizeRoles = (...roles) => {
+exports.authorizeRoles = ({}) => {
   return (req, res, next) => {
     if (!roles.includes(req.user.role)) {
       return next(

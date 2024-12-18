@@ -10,7 +10,6 @@ const sendToken = require("../utils/JwtToken");
 
 // RegisterUser  
 exports.registerUser = CathasyncError(async (req, res, next) => {
-
   const myCloud=await cloudinary.v2.uploader .upload(req.body.avatar,{
     folder:"avatars",
     width:"150",
@@ -24,7 +23,6 @@ exports.registerUser = CathasyncError(async (req, res, next) => {
       avatar: {
         public_id: myCloud.public_id,
         url: myCloud.secure_url,
-      
       },
     });
     sendToken(user,201,res)
@@ -137,7 +135,6 @@ exports.resetPassword = CathasyncError(async (req, res, next) => {
 
 exports.getUserdatils=CathasyncError(async(req,res,next)=>{
 const user=await User.findById(req.user.id)
-
 res.status(200).json({
   success:true,
   user,
@@ -173,9 +170,8 @@ exports.updatePassword = CathasyncError(async (req, res, next) => {
 exports.updateProfile =CathasyncError(async (req, res, next) => {
   const newUserData = {
     name: req.body.name,
-    email: req.body.email,
+    email: req.body.email,  
   };
-
   if (req.body.avatar !== "") {
     const user = await User.findById(req.user.id);
 
